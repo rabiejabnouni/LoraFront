@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="navbar">
+    <app-navbar></app-navbar>
+  </div>
+
+  <div class="break">
+    <ul class="conversions">
+      <li *ngFor="let conversion of conversions" (click)="onConversationClick(conversion.id)">
+        <app-friend [conversion]="conversion"></app-friend>
+      </li>
+    </ul>
+  </div>
+  
+
+  <div class="grid-container" >
+    <app-conversion></app-conversion>
+  </div>
+
+</div>

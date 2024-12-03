@@ -1,0 +1,50 @@
+.msg-respance {
+  position: relative; /* Change from absolute to relative for better alignment */
+  width: 80%;
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: 56vw; /* Add some margin to separate messages */
+}
+
+.sender-img {
+  width: 50px; /* Fixed width for user image */
+  margin-right: 10px; /* Space between image and message */
+}
+
+.user_img {
+  width: 5vh;
+  height:5vh;
+  border-radius: 50%; /* Circular image */
+}
+
+.msg {
+  max-width: 50%; /* Adjust to ensure message does not overlap */
+  background-color: #eee; /* Sample background for message */
+  padding: 10px;
+  border-radius: 10px;
+  word-wrap: break-word; /* Allow text to wrap if it's too long */
+}
+
+.span-msg {
+  color: #333;
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.info-msg {
+  cursor: pointer;
+}
+
+.bi-three-dots-vertical {
+  color: #002fff;
+  margin-left: auto; /* Pushes the dots to the right side */
+  cursor: pointer;
+  width: 2vh;
+  transition: transform 0.4s ease-in-out;
+}
+.bi-three-dots-vertical:hover{
+  transform: scale(1.5);
+}

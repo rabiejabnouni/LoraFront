@@ -1,0 +1,243 @@
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-wrap: wrap;
+  border-radius: 25px;
+}
+
+.card {
+  background-color: #f7f8fc;
+  width: 100%;
+  border: 1px solid #eeeef1;
+  border-radius: 10px;
+
+}
+
+.card-header img {
+  width: 100%;
+  height: 30%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-body {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 70%;
+  padding: 5%;
+
+}
+
+
+.tableaux a {
+  padding-left: 10px; /* Ajustez la valeur selon vos besoins */
+}
+
+.discription{
+  margin-top: 1%;
+  background: #ffffff;
+  border-radius: 10px;
+  font-size: 1.2vw;
+  margin: 0;
+  color: #fff;
+  padding: 0.3vw 1vw;
+  cursor: pointer;
+}
+
+p,
+h5,
+h4 {
+  color: #000000;
+  font-family: "billabong", sans-serif;
+  text-decoration: none;
+}
+
+.card-body p {
+  font-size: 1.3vw;
+  margin: 0 0 4vw;
+}
+
+.user {
+  display: flex;
+  margin-top: auto;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 4vw;
+  height: 4vw;
+  margin-right: 1vw;
+}
+
+.user-info h5 {
+  margin: 0;
+}
+
+.user-info small {
+  color: #545d7a;
+}
+
+
+.comment_input{
+  position: fixed;
+  margin-top: 1%;
+  background: #ffffff;
+  border-radius: 50px;
+  font-size: 1.2vw;
+  margin: 0;
+  color: #fff;
+  padding: 0.3vw 1vw;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #eff1f1;
+}
+.svg-icon-love {
+  width: 40px;
+  margin-left: -15%;
+  height: 40px;
+  fill: #ca3f3f; /* Couleur par défaut */
+  transition: fill 0.3s ease; /* Transition pour un changement de couleur */
+  cursor: pointer; /* Change le curseur au survol */
+}
+
+.svg-icon-love:hover {
+  fill: #c50f0f; /* Change la couleur au survol */
+}
+.svg-icon-comment {
+  margin-left: 5%;
+  width: 40px;
+  height: 40px;
+  fill: #13abe7; /* Couleur par défaut */
+  transition: fill 0.3s ease; /* Transition pour un changement de couleur */
+  cursor: pointer; /* Change le curseur au survol */
+}
+
+.svg-icon-comment:hover {
+  fill: #13abe7; /* Change la couleur au survol */
+}
+
+
+.login100-form-btn {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 1;
+}
+
+.login100-form-btn::before {
+  content: "";
+  display: block;
+  position: absolute  ;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  background: #a64bf4;
+  background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
+  background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
+  background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.login100-form-btn:hover:before {
+  opacity: 1;
+}
+
+
+ul {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+
+  margin: 0;
+ margin-left: -15%;
+  list-style-type: none;
+  li:not(:last-child) {
+    margin-right: -1%;
+  }
+  li {
+    padding: 10px;
+    position: relative;
+    a {
+      color: #f6f8fa;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    ul {
+      visibility: hidden;
+      opacity: 0;
+      position: fixed;
+      display: block;
+      margin: 1px -1px;
+      padding: 0;
+      border-radius: 50px;
+      transition: opacity 0.2s, visibility 0.2s;
+      li {
+        margin: -2px 0 0 -2px;
+        width: calc(100% - 20px);
+        line-height: 1.7;
+        a {
+          color: #fcfcfc;
+        }
+      }
+    }
+    &:hover {
+
+      a {
+        color: #F9F8FD;
+      }
+      ul {
+        visibility: visible;
+        opacity: 1;
+        li {
+          a {
+            color: #F9F8FD;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    top: -50px;
+  }
+  40% {
+    top: 20px;
+  }
+  70% {
+    top: 10px;
+  }
+  100% {
+    top: 15px;
+  }
+}

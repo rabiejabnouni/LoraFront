@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+    </div>
+
+    <div class="card-body">
+      <div class="tag tag-teal">
+        <!-- Contrôle audio -->
+        <audio id="audio" controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <a>Description</a>
+      <div class="description">
+        <h5>ID Break: {{ idBreak }}</h5>
+      </div>
+
+      <!-- Boutons de réaction -->
+      <a>React</a>
+      <div class="description">
+        <ul class="tableaux">
+          <li class="login100-form-btn" (click)="toggleLikeSong()">
+            <!-- Changement de l'icône en fonction de l'état 'likedSong' -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-love bi bi-heart-fill" viewBox="0 0 16 16" [ngClass]="{ 'liked': likedSong }">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+            </svg>
+            <a>{{ likedSong ? 'Unlike' : 'Like' }}</a>
+          </li>
+
+          <li class="login100-form-btn" id="comment">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-comment bi bi-chat-fill" viewBox="0 0 16 16">
+              <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15"/>
+            </svg>
+            <a>Comments</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Affichage des informations de l'utilisateur -->
+      <div class="user">
+        <img src="https://yt3.ggpht.com/a/AGF-l7-0J1G0Ue0mcZMw-99kMeVuBmRxiPjyvIYONg=s900-c-k-c0xffffffff-no-rj-mo" alt="user" />
+        <div class="user-info">
+          <h5>July Dec</h5>
+          <small>2h ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

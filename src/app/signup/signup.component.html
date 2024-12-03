@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
+				<form class="login100-form validate-form flex-sb flex-w" (ngSubmit)="onsignup()">
+					<span class="login100-form-title p-b-53">
+						Sign UP With
+					</span>
+
+					<a href="#" class="btn-face m-b-20">
+						<i class="fa fa-facebook-official"></i>
+						Facebook
+					</a>
+
+
+					<div class="btn-google m-b-20" >
+            <div class="icon" id="googleSignInButton">
+					</div>
+          Google
+          </div>
+
+					<div class="p-t-31 p-b-9">
+						<span class="txt1">
+							first name
+						</span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "Username is required">
+						<input [(ngModel)]="signupObj.firstName" class="input100" type="text" name="firstname" >
+						<span class="focus-input100"></span>
+					</div>
+
+
+					<div class="p-t-31 p-b-9">
+						<span class="txt1">
+							last name
+						</span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "Username is required">
+						<input  [(ngModel)]="signupObj.lastName" class="input100" type="text" name="username" >
+						<span class="focus-input100"></span>
+					</div>
+
+
+					<div class="p-t-31 p-b-9">
+						<span class="txt1">
+							email
+						</span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "Username is required">
+						<input  [(ngModel)]="signupObj.email" class="input100" type="text" name="email" >
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="p-t-13 p-b-9">
+						<span class="txt1">
+							Password
+						</span>
+
+
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input  [(ngModel)]="signupObj.password" class="input100" type="password" name="pass" >
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-login100-form-btn m-t-17">
+						<button type="submit" class="login100-form-btn"  >
+							Sign up
+						</button>
+					</div>
+
+					<div class="w-full text-center p-t-55">
+						<span class="txt2">
+							you have a compte?
+						</span>
+
+						<a href="#" class="txt2 bo1">
+							<a href="/login">Sign in</a>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '902385408611867|GTynC6hgdiHU2V0R7JFWgHkXjpI', // Remplacez par votre App ID
+        cookie     : true,           // Active les cookies pour permettre à l'API de gérer les sessions.
+        xfbml      : true,           // Active le parsing XFBML.
+        version    : 'v16.0'         // Utilisez la dernière version de l'API Graph de Facebook.
+      });
+      FB.AppEvents.logPageView(); // Log de la visite de page
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+</html>

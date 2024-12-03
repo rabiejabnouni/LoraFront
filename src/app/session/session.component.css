@@ -1,0 +1,183 @@
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-wrap: wrap;
+  border-radius: 25px;
+}
+
+.card {
+  background-color: #f7f8fc;
+  width: 100%;
+  border: 1px solid #eeeef1;
+  border-radius: 10px;
+
+}
+
+
+.card-body {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 70%;
+  padding: 5%;
+
+}
+
+
+
+
+.discription{
+  margin-top: 1%;
+  background: #ffffff;
+  border-radius: 10px;
+  font-size: 1.2vw;
+  margin: 0;
+  color: #fff;
+  padding: 0.3vw 1vw;
+  cursor: pointer;
+}
+
+p,
+h5
+ {
+  color: #fc00ff;
+    font-size: 1.5vw; /* Taille de la police proportionnelle à la largeur de la fenêtre */
+    margin: 0 0 1rem 0;
+    font-weight: 500;
+}
+a {
+  color:#00dbde;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.bi-plus-square{
+    color: rgb(255, 255, 255);
+  margin-left: -5%;
+}
+
+.login100-form-btn {
+  display: flex;                     /* Makes the button a flex container */
+  width: 100%;                       /* Takes the full width of the parent */
+  height: 100%;                      /* Takes the full height of the parent */
+  padding: 10px 20px;                /* Adds vertical and horizontal padding */
+  border-radius: 10px;               /* Rounds the corners of the button */
+
+  font-family: 'Poppins', sans-serif; /* Sets the font family */
+  font-size: 15px;                   /* Sets the font size */
+  color: #fff;                       /* Sets the text color */
+  line-height: 1;                    /* Sets the line height */
+
+  background: linear-gradient(45deg, #00dbde, #fc00ff); /* Gradient background */
+
+  transition: all 0.4s;             /* Smooth transition for all properties */
+  position: relative;                /* Sets positioning context for pseudo-elements */
+  z-index: 1;                       /* Ensures the button is above other elements */
+}
+
+/* Style for the anchor (<a>) element within the button */
+.login100-form-btn a {
+  color: #00dbde;                    /* Sets the anchor text color */
+  text-decoration: none;             /* Removes underline from the link */
+  text-transform: uppercase;         /* Transforms text to uppercase */
+  transition: color 0.1s;
+  margin-top: 10%;
+  margin-left: 10%;             /* Adds space above the anchor text */
+}
+
+/* Optional hover effect */
+.login100-form-btn:hover {
+  background: linear-gradient(45deg, #fc00ff, #00dbde); /* Changes gradient on hover */
+}
+
+/* Optional hover effect for the anchor */
+.login100-form-btn a:hover {
+  color: #fff;                       /* Changes anchor color on hover */
+}
+
+.login100-form-btn1 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 1;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+
+  margin: 0;
+ margin-left: -15%;
+  list-style-type: none;
+  li:not(:last-child) {
+    margin-right: -1%;
+  }
+  li {
+    padding: 10px;
+    position: relative;
+
+    ul {
+      visibility: hidden;
+      opacity: 0;
+      position: fixed;
+      display: block;
+      margin: 1px -1px;
+      padding: 0;
+      border-radius: 50px;
+      transition: opacity 0.2s, visibility 0.2s;
+      li {
+        margin: -2px 0 0 -2px;
+        width: calc(100% - 20px);
+        line-height: 1.7;
+        a {
+          color: #fcfcfc;
+        }
+      }
+    }
+    &:hover {
+
+
+      ul {
+        visibility: visible;
+        opacity: 1;
+
+      }
+    }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    top: -50px;
+  }
+  40% {
+    top: 20px;
+  }
+  70% {
+    top: 10px;
+  }
+  100% {
+    top: 15px;
+  }
+}

@@ -1,0 +1,85 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #00dbde, #fd71ff);
+  display: flex;
+  flex-direction: column;
+}
+
+.break {
+  top: 10vh;
+  width: 15vw;
+  height: 50vh;
+  position: relative;
+  margin-left: 6.5vw;
+}
+
+.navbar {
+  width: 100vw;
+  height: 20vh;
+  padding: auto;
+}
+
+.breakpoint {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: auto;
+  max-height: 90vh;
+  z-index: 1000;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 10%;
+  text-align: center;
+  height: 100%; /* Hauteur auto-ajustée à la taille de la ligne */
+}
+
+.blurred {
+  filter: blur(30px);
+  transition: filter 0.3s ease-in-out;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  grid-template-rows: repeat(10, 1fr); /* 10 lignes */
+  overflow-y: auto;
+  row-gap: 2vh; /* Espacement entre les lignes en fonction de la hauteur de l'écran */
+  column-gap: 1vw; /* Espacement entre les colonnes en fonction de la largeur de l'écran */
+  margin-left: 20vw;
+  margin-top: -40vh;
+  width: 80vw; /* Largeur relative à l'écran */
+}
+
+/* Media Queries pour les petits écrans */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Réduire à 2 colonnes sur les petits écrans */
+    margin-left: 10vw;
+  }
+
+  .breakpoint {
+    width: 90vw; /* Ajuster la largeur pour les petits écrans */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Une seule colonne sur les très petits écrans */
+    margin-left: 5vw;
+  }
+
+  .breakpoint {
+    width: 100vw;
+  }
+}

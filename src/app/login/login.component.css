@@ -1,0 +1,19 @@
+/* styles pour login.component.css */
+@import url('./Login_v5/vendor/bootstrap/css/bootstrap.min.css');
+@import url('./Login_v5/fonts/font-awesome-4.7.0/css/font-awesome.min.css');
+@import url('./Login_v5/fonts/Linearicons-Free-v1.0.0/icon-font.min.css');
+@import url('./Login_v5/vendor/animate/animate.css');
+@import url('./Login_v5/vendor/css-hamburgers/hamburgers.min.css');
+@import url('./Login_v5/vendor/animsition/css/animsition.min.css');
+@import url('./Login_v5/vendor/select2/select2.min.css');
+@import url('./Login_v5/vendor/daterangepicker/daterangepicker.css');
+@import url('./Login_v5/css/util.css');
+@import url('./Login_v5/css/main.css');
+@import url('https://accounts.google.com/gsi/client');
+
+
+.icon{
+  position: absolute;
+  margin-left: -70%;
+}
+

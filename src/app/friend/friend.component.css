@@ -1,0 +1,82 @@
+
+
+.conversion{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 28vw;
+  height: 10vh;
+  border-radius: 10px;
+  margin-left: -1.8vw;
+  margin-top: 1vh;
+  background: rgba(255, 255, 255, 0.30);
+  cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+  border: 2px solid #eeeef1;
+}
+.conversion:hover{
+  transform: scale(1.03);
+}
+.frind-img{
+  width: 6vw;
+  height: 6vw;
+
+}
+.frind-info{
+  width: 20%;
+  height: 100%;
+  word-wrap: break-word; /* Permet de casser les mots si c'est trop long */
+
+}
+.last-message{
+  width: 55%;
+  height: 100%;
+  word-wrap: break-word; /* Permet de casser les mots si c'est trop long */
+}
+p{
+  color: #f0e8e8; /* Couleur du texte du placeholder */
+  font-size: 2vh; /* Taille du texte */
+  font-style: italic; /* Style du texte */
+  margin-top: 3.5vh;
+  opacity: 0.7; /* Opacité pour un effet légèrement transparent */
+  font-weight: 200; /* Poids du texte */
+  transition: color 0.3s ease-in-out; /* Transition pour le changement de couleur */
+
+}
+h4{
+  color: #6d6868;
+  margin-top: 3.5vh;
+  margin-left: 1vw;
+}
+.description{
+  font-size: 2vh; 
+  font-style: italic; 
+
+  opacity: 0.7; 
+  font-weight: 200; 
+  transition: color 0.3s ease-in-out
+}
+.user_img{
+  width: 70%;
+  height: 80%;
+  border-radius: 50%;
+  margin-top: 7%;
+  margin-left: 6%;
+  border: 1px solid #eeeef1;
+}
+.point{
+  width: 5%;
+  height: 100%;
+
+}
+.bi-three-dots-vertical{
+  color: #ffffff;
+  fill:currentColor;
+  width: 100%;
+  height: 100%;
+transition: transform 0.4s ease-in-out;
+cursor: pointer;
+}
+.bi-three-dots-vertical:hover{
+  transform: scale(1.3);
+}

@@ -1,0 +1,48 @@
+.msg-respance{
+  position: absolute;
+  width: 80%;
+  height: 10%;
+  margin-left: -49%;
+  border: 1px solid color #eeeef1;
+  display: inline-flex;
+}
+.sender-img{
+  width: 5%;
+  height: 100%;
+  border-radius: 50%;
+
+.user_img{
+  position: absolute;
+  position: relative;
+  width: 5.5vh;
+    border-radius: 50%;
+  }
+}
+.info-msg{
+  width: 3%;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+}
+.bi-three-dots-vertical{
+  color: #ffffff;
+  fill:currentColor;
+  width: 90%;
+  height: 90%;
+margin: 10%;
+transition: transform 0.4s ease-in-out;
+}
+.msg{
+  width: 91.5%;
+  border: 1px solid #eeeef1;
+  border-radius: 10px;
+  height: 100%;
+  margin-left: 0.5%;
+}
+.info-msg:hover{
+  transform: scale(1.4);
+}
+.bi-three-dots-vertical{
+  color: #3d55bd;
+}

@@ -1,0 +1,251 @@
+@import url('../login/Login_v5/css/util.css');
+@import url('../login/Login_v5/css/main.css');
+
+.chat {
+  border-radius: 1%;
+  width: 65vw;
+  height: 83vh;
+  border: 1px solid #eeeef1;
+  border-radius: 1%;
+}
+
+.navbar {
+  width: 65vw;
+  height: 10vh;
+  border-radius: 1%;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.50);
+  transition: background-color 0.3s;
+  justify-content: center;
+}
+
+.user-img {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 1%;
+  margin-bottom: 0.7vh;
+  margin-right: 60vw;
+  border-radius: 50%;
+}
+
+
+.user_img {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+}
+
+.user_info span {
+  margin-top: 2vh;
+  font-weight: bold;
+  color: hsl(210, 29%, 97%);
+}
+
+.user_info p {
+  color: #ffffff;
+  margin: 0;
+  margin: 1vw;
+  font-weight: bold;
+}
+
+.user_info {
+  position: absolute;
+  width: 7vw;
+  height: 10vh;
+  margin-right: 48vw;
+  border-radius: 1%;
+}
+
+.phone {
+  position: absolute;
+  width: 5vw;
+  height: 10vh;
+  margin-left: 50vw;
+  border-radius: 1%;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.bi-telephone {
+  color: #585c57;
+  fill: currentColor;
+  width: 4vw;
+  height: 4vh;
+  margin-top: 2vh;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.vedio {
+  position: absolute;
+  width: 5vw;
+  height: 10vh;
+  margin-left: 60vw;
+  border-radius: 1%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.conversion {
+  position: absolute;
+  max-width: 64.9vw;
+  width: 64.9vw;
+  scroll-behavior: smooth;
+  flex-direction: column-reverse; /* Inverser la direction du flux des messages */
+
+  height: 62vh;
+  overflow: auto;
+  flex-direction: column-reverse;
+  padding: 1vh;
+  justify-content: center;
+  background: rgba(184, 39, 39, 0.25);
+}
+
+.msg-- {
+  margin-bottom: 6vh; /* Espace entre les messages */
+}
+
+
+.input {
+  position: fixed;
+  height: 10.8vh;
+  width: 64.9vw;
+  margin-top: 62vh;
+  background: rgba(255, 255, 255, 0.50);
+  border-radius: 1.2%;
+  border-radius: 10px;
+}
+.input1 {
+    background-color: #ffffff;
+    width: 54.1vw;
+    border-radius: 10px;
+    margin-top: 3vh;
+    font-family: 'Lexend Exa', sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background-color: transparent; 
+    border: 2px solid rgba(255, 255, 255, 0.8); 
+    padding: 10px; 
+    outline: none; 
+    transition: border-color 0.3s ease-in-out;
+    resize: none; 
+    min-height: 6.5vh;
+    
+
+}
+
+.input1:focus {
+  border-color: #00ffff; /* Couleur du contour lors de la saisie */
+  box-shadow: 0 0 10px rgba(24, 199, 199, 0.5); /* Effet d'ombre pour le focus */
+  background-color: rgba(0, 0, 0, 0.1); /* Optionnel : changer le fond lors du focus */
+}
+
+.focus-input100{
+  height: 6.5vh;
+  width: 54.1vw;
+  margin-top: 3.1vh;
+}
+
+.input-text {
+  position: absolute;
+  height:8vh;
+  width: 54vw;
+  margin-left: 1vw;
+  margin-top: -0.5%;
+  word-wrap: break-word; /* Allow text to wrap if it's too long */
+
+  display: inline-block;
+}
+
+.btn-send {
+  position: absolute;
+  height: 11vh;
+  width: 5vw;
+  margin-left:55vw;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn_micro {
+  position: absolute;
+  height: 11vh;
+  width: 5vw;
+  margin-left: 60vw;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bi-send-fill {
+  color: #ffffff;
+  fill: currentColor;
+  width: 4vw;
+  height: 4vh;
+ margin-top: 3vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bi-mic-fill {
+  color: #ffffff;
+  fill: currentColor;
+  width: 4vw;
+  height: 4vh;
+  margin-top: 3vh;
+  color: #eb1b1b;
+  transition: transform 0.3s ease-in-out;
+}
+
+.validate-input {
+  margin-top: 3vh;
+}
+
+.bi-send-fill:hover {
+  color: aqua;
+}
+
+.btn-send:hover {
+  transform: scale(1.3);
+  color: aqua;
+}
+
+.btn_micro:hover {
+  transform: scale(1.3);
+  color: rgb(255, 38, 0);
+}
+
+.bi-telephone:hover {
+  color: rgb(9, 255, 0);
+}
+
+.phone:hover {
+  transform: scale(1.3);
+}
+
+.vedio:hover {
+  transform: scale(1.3);
+}
+
+.info-msg:hover {
+  transform: scale(1.4);
+}
+.input1:hover{
+  border: 1px solid #8585c7;
+}
+
+.bi-three-dots-vertical {
+  color: #3d55bd;
+}
+::placeholder {
+  color: #999999; /* Couleur du texte du placeholder */
+  font-size: 2vh; /* Taille du texte */
+  font-style: italic; /* Style du texte */
+  opacity: 0.7; /* Opacité pour un effet légèrement transparent */
+  font-weight: 200; /* Poids du texte */
+  transition: color 0.3s ease-in-out; /* Transition pour le changement de couleur */
+}
+
+.input-text::placeholder {
+  color: #b0b0b0; /* Couleur personnalisée pour les champs spécifiques */
+  font-size: 2vw;
+  font-style: oblique;
+}

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <img [src]="selectedImage" alt="rover" />
+    </div>
+
+    <div class="p-t-31 p-b-9"></div>
+
+    <div class="wrap-input100 validate-input" data-validate="Username is required">
+      <input [(ngModel)]="description" name="description" class="input100" required placeholder="description">
+      <span class="focus-input100"></span>
+    </div>
+
+    <!-- Bouton pour ajouter une image -->
+    <div class="container-login100-form-btn m-t-17">
+      <button class="login100-form-btn" (click)="imageInput.click()">Ajouter une image</button>
+      <input type="file" (change)="onImageSelected($event)" accept="image/*" #imageInput style="display: none;" />
+    </div>
+
+    <!-- Bouton pour ajouter une chanson -->
+    <div class="container-login100-form-btn m-t-17">
+      <button class="login100-form-btn" (click)="songInput.click()">Ajouter une chanson</button>
+      <input type="file" (change)="onSongSelected($event)" accept="audio/*" #songInput style="display: none;" />
+    </div>
+
+    <!-- Bouton pour poster le break -->
+    <div class="container-login100-form-btn m-t-17">
+      <button class="login100-form-btn"  >Poster</button>
+    </div>
+  </div>
+</div>

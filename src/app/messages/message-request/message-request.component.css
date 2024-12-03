@@ -1,0 +1,51 @@
+.msg-respance {
+  position: relative; /* Garder comme relative pour le meilleur alignement */
+  width: 80%; /* Ajuster la largeur selon vos besoins */
+  display: flex;
+  align-items: center; /* Alignement vertical */
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-left: 12vw; /* Pas de marge à gauche pour un alignement correct */
+  margin-bottom: 10px; /* Ajoute de l'espace entre les messages */
+  justify-content: flex-end; /* Aligne les éléments à droite */
+}
+
+.sender-img {
+  width: 5vh; /* Largeur fixe pour l'image de l'utilisateur */
+  height: 5vh; /* Hauteur fixe pour l'image de l'utilisateur */
+  margin-left: 10px; /* Espace entre l'image et le message */
+}
+
+.user_img {
+  width: 100%; /* Assurez-vous que l'image occupe toute la largeur du conteneur */
+  height: auto; /* Hauteur automatique pour maintenir le rapport d'aspect */
+  border-radius: 50%; /* Image circulaire */
+}
+
+.msg {
+  max-width: 90%; /* Ajuster pour s'assurer que le message ne déborde pas */
+  background-color: #e2e0e0; /* Couleur d'arrière-plan échantillon pour le message */
+  padding: 10px;
+  border-radius: 10px;
+  word-wrap: break-word; /* Permet de casser les mots si c'est trop long */
+  margin-left: auto; /* Pousse le message vers la droite */
+}
+
+.span-msg {
+  color: #333;
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.info-msg {
+  display: flex;
+  justify-content: flex-end; /* S'assure que l'icône est à droite */
+  margin-left: 10px; /* Espace entre le texte et l'icône */
+}
+
+
+
+.bi-three-dots-vertical:hover {
+  transform: scale(1.5); /* Agrandit l'icône au survol */
+}

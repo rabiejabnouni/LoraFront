@@ -1,0 +1,60 @@
+
+@import url('../login/Login_v5/css/main.css');
+.wrap-input100 {
+  width: 100%;
+}
+.input100{
+    overflow-y: auto; /* Permet le défilement vertical */
+
+}
+.container {
+  width: 100%;
+  max-height: 100%; /* Limite la hauteur du conteneur */
+  overflow-y: auto; /* Permet le défilement vertical */
+  padding: 0px; /* Espace intérieur */
+  background-color: #eff1f1;
+  border: 10px;
+}
+
+.card {
+  background-color: #f7f8fc;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.discription {
+  position: relative;
+  margin-top: 1%;
+  background: #ffffff;
+  border-radius: 5px;
+  font-size: 1.2vw;
+  margin: 0;
+  color: #000; /* Changez le texte en noir pour plus de lisibilité */
+  padding: 0.3vw 1vw;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #eff1f1;
+}
+
+.user {
+  display: flex;
+  margin-top: auto;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 1vw;
+}
+
+.user-info h5 {
+  margin: 0;
+}
+
+.user-info small {
+  color: #545d7a;
+}
+
+

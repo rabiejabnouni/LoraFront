@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="navbar" [ngClass]="{ 'blurred': isBlurred }" *ngIf="post">
+    <app-navbar></app-navbar>
+  </div>
+
+  <div class="break">
+
+      <app-break></app-break>
+  </div>
+
+  <div class="breakpoint" *ngIf="isBlurred">
+      <app-createbreak *ngIf="break===6"></app-createbreak>
+      <app-breakpoint *ngIf="break===1"></app-breakpoint>
+      <app-breakpoint *ngIf="break===2"></app-breakpoint>
+      <app-breakpoint *ngIf="break===3"></app-breakpoint>
+      <app-breakpoint *ngIf="break===4"></app-breakpoint>
+      <app-breakpoint *ngIf="break===5"></app-breakpoint>
+
+  </div>
+
+  <div class="grid-container" [ngClass]="{ 'blurred': isBlurred }" *ngIf="post">
+    <div class="grid-item">
+          <app-post></app-post>
+      </div>
+      <div class="grid-item">
+          <app-post></app-post>
+      </div>
+      <div class="grid-item">
+          <app-post></app-post>
+      </div>
+      <div class="grid-item">
+          <app-post></app-post>
+      </div>
+      <div class="grid-item">
+          <app-post></app-post>
+      </div>
+      <div class="grid-item">
+          <app-post></app-post>
+      </div>
+      <div class="grid-item">
+          <app-post></app-post>
+      </div>
+      <div class="grid-item">
+          <app-post></app-post>
+      </div>
+      <div class="grid-item">
+          <app-post></app-post>
+      </div>
+  </div>
+</div>
